@@ -6,6 +6,7 @@
 	<style>
 		td{
 			color: green;
+			font-size: 30px;
 		}
 	</style>
 </head>

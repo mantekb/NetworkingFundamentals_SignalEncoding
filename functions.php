@@ -154,11 +154,7 @@ function manchester($bits,$n)
 	for ($i = 1;$i <= $n-1;$i++)
 	{
 
-		if ($bits[$i] == 0 )
-		{
-			echo "|¯|_";
-		}
-		else if ($bits[$i] == 1 && $bits[$i - 1] == 1)
+		if ($bits[$i] == 1 && $bits[$i - 1] == 1)
 		{
 			echo "|_|¯";
 		}
@@ -169,6 +165,10 @@ function manchester($bits,$n)
 		else if ($bits[$i] == 1 && $bits[$i - 1] == 0)
 		{
 			echo "_|¯";
+		}
+		elseif ($bits[$i] == 0 )
+		{
+			echo "|¯|_";
 		}
 
 	}
