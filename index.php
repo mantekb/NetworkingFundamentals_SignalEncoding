@@ -33,14 +33,14 @@
 			</thead>
 			<tbody> 
 				<tr>
-					<th scope="row">NRZ</th>
+					<th scope="row">NRZ L</th>
 					<td><?php
 						NRZ($bits,$n);		 
 					?></td>
 				</tr>
 
 				<tr>
-					<th scope="row">NRZ</th>
+					<th scope="row">NRZ I</th>
 					<td><?php
 						INRZ($bits,$n);		 
 					?></td>
@@ -80,6 +80,14 @@
 						B8ZS($bits,$n);		 
 					?></td>
 				</tr>
+
+				<tr>
+					<th scope="row">HDB3</th>
+					<td><?php
+						HDB3($bits,$n);		 
+					?></td>
+				</tr>
+
 			</tbody>
 		</table>
 		<?php } ?>

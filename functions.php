@@ -260,4 +260,59 @@ function B8ZS($bits,$n)
 	}
 }
 
+
+function HDB3($bits, $n)
+{
+	$flag = 0;
+	$count = 1;
+	
+	for ($i = 0;$i <= $n-1;$i++)
+	{
+        if ($i < $n-1 && $bits[$i] == 0 && $bits[$i+1] == 0 && $bits[$i+2] == 0 && $bits[$i+3] == 0)
+	    {
+	        if($flag == 0 && $count%2 != 0)
+	        {
+	            echo "---_";
+	            $count=0;
+	        }
+	        else if($flag == 0 && $count%2 == 0)
+	        {
+	            echo "¯--¯";
+	            $count=0;
+	            $flag=1;
+	        }
+	        else if($flag == 1 && $count%2 != 0)
+	        {
+	            echo "---¯";
+	            $count=0;
+	        }
+	        else if($flag==1 && $count%2 == 0)
+	        {
+	            echo "_--_";
+	            $count=0;
+	            $flag=0;
+	        }
+	        $i=$i+3;
+	    
+    	}
+		else if ($bits[$i] == 0)
+		{
+			echo "-";
+		}
+		else if ($bits[$i] == 1 && $flag == 1)
+		{
+			$flag = 0;
+			echo "_";
+			$count++;
+		}
+	    else if ($bits[$i] == 1 && $flag == 0 )
+		{
+			$flag = 1;
+			echo "¯";
+			$count++;
+		}
+	}
+}
+
+
 ?>
