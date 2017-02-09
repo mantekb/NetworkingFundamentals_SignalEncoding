@@ -31,7 +31,7 @@
 				</tr>
 
 				<tr>
-					<th scope="row">NRZ</th>
+					<th scope="row">NRZ-I</th>
 					<td><?php
 						INRZ($bits,$n);		 
 					?></td>
