@@ -2,7 +2,7 @@
 
 function NRZ($bits,$n)
 {
-	if ($bits[1] == 0)
+	if ($bits[0] == 0)
 	{
 		echo "¯";
 	}
@@ -10,7 +10,7 @@ function NRZ($bits,$n)
 	{
 		echo "_";
 	}
-	for ($i = 2;$i <= $n-1;$i++)
+	for ($i = 1;$i <= $n-1;$i++)
 	{
 		
 		if ($bits[$i] == 0 && $bits[$i - 1] == 0)
@@ -38,7 +38,7 @@ function INRZ($bits,$n)
 	$flag = 0;
 
 	
-	if ($bits[1] == 0)
+	if ($bits[0] == 0)
 	{
 		echo "_";
 		$flag = 0;
@@ -48,7 +48,7 @@ function INRZ($bits,$n)
 		echo "¯";
 		$flag = 1;
 	}
-	for ($i = 2;$i <= $n-1;$i++)
+	for ($i = 1;$i <= $n-1;$i++)
 	{
 
 		if ($bits[$i] == 0)
@@ -77,7 +77,7 @@ function AMI($bits,$n)
 {
 	$flag = 0;
 	
-	if ($bits[1] == 0)
+	if ($bits[0] == 0)
 	{
 		echo "-";
 	}
@@ -86,7 +86,7 @@ function AMI($bits,$n)
 		echo "¯";
 		$flag = 1;
 	}
-	for ($i = 2;$i <= $n-1;$i++)
+	for ($i = 1;$i <= $n-1;$i++)
 	{
 
 		if ($bits[$i] == 0)
@@ -110,7 +110,7 @@ function pseudo($bits,$n)
 {
 	$flag = 0;
 	
-	if ($bits[1] == 1)
+	if ($bits[0] == 1)
 	{
 		echo "-";
 	}
@@ -119,7 +119,7 @@ function pseudo($bits,$n)
 		echo "¯";
 		$flag = 1;
 	}
-	for ($i = 2;$i <= $n-1;$i++)
+	for ($i = 1;$i <= $n-1;$i++)
 	{
 
 		if ($bits[$i] == 1)
@@ -143,7 +143,7 @@ function pseudo($bits,$n)
 function manchester($bits,$n)
 {
 	
-	if ($bits[1] == 0)
+	if ($bits[0] == 0)
 	{
 		echo "¯|_";
 	}
@@ -151,7 +151,7 @@ function manchester($bits,$n)
 	{
 		echo "_|¯";
 	}
-	for ($i = 2;$i <= $n-1;$i++)
+	for ($i = 1;$i <= $n-1;$i++)
 	{
 
 		if ($bits[$i] == 0 )
@@ -178,7 +178,7 @@ function diffman($bits,$n)
 {
 	$flag = 0;
 	
-	if ($bits[1] == 0)
+	if ($bits[0] == 0)
 	{
 		echo "|_|¯";
 		$flag = 0;
@@ -188,7 +188,7 @@ function diffman($bits,$n)
 		echo "¯|_";
 		$flag = 1;
 	}
-	for ($i = 2;$i <= $n-1;$i++)
+	for ($i = 1;$i <= $n-1;$i++)
 	{
 
 		if ($bits[$i] == 0)
@@ -218,7 +218,7 @@ function B8ZS($bits,$n)
 {
 	$flag = 0;
 	
-	if ($bits[1] == 0)
+	if ($bits[0] == 0)
 	{
 		echo "-";
 		$flag = 0;
@@ -228,7 +228,7 @@ function B8ZS($bits,$n)
 		echo "¯";
 		$flag = 1;
 	}
-	for ($i = 2;$i <= $n-1;$i++)
+	for ($i = 1;$i <= $n-1;$i++)
 	{
 
 		if ($i < $n-1 && $bits[$i] == 0 && $bits[$i + 1] == 0 && $bits[$i + 2] == 0 && $bits[$i + 3] == 0 && $bits[$i + 4] == 0 && $bits[$i + 5] == 0 && $bits[$i + 6] == 0 && $bits[$i + 7] == 0)
