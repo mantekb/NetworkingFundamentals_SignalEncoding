@@ -3,6 +3,11 @@
 <head>
 	<link href="css/bootstrap.css" rel="stylesheet">
 	<title>Signal Encoding</title>
+	<style>
+		td{
+			color: green;
+		}
+	</style>
 </head>
 
 <body>
