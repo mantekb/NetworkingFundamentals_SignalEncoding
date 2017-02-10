@@ -1,5 +1,4 @@
 <?php
-
 function NRZ($bits,$n)
 {
 	if ($bits[0] == 0)
@@ -29,14 +28,12 @@ function NRZ($bits,$n)
 		{
 			echo "|_";
 		}
-
 	}
 }
 	
 function INRZ($bits,$n)
 {
 	$flag = 0;
-
 	
 	if ($bits[0] == 0)
 	{
@@ -50,7 +47,6 @@ function INRZ($bits,$n)
 	}
 	for ($i = 1;$i <= $n-1;$i++)
 	{
-
 		if ($bits[$i] == 0)
 		{
 			if ($flag == 0)
@@ -64,7 +60,6 @@ function INRZ($bits,$n)
 				$flag = 1;
 			else
 				$flag = 0;
-
 			if ($flag == 0)
 				echo "|_";
 			else
@@ -72,7 +67,6 @@ function INRZ($bits,$n)
 		}
 	}
 }
-
 function AMI($bits,$n)
 {
 	$flag = 0;
@@ -88,7 +82,6 @@ function AMI($bits,$n)
 	}
 	for ($i = 1;$i <= $n-1;$i++)
 	{
-
 		if ($bits[$i] == 0)
 		{
 			echo "-";
@@ -105,7 +98,6 @@ function AMI($bits,$n)
 		}
 	}
 }
-
 function pseudo($bits,$n)
 {
 	$flag = 0;
@@ -121,7 +113,6 @@ function pseudo($bits,$n)
 	}
 	for ($i = 1;$i <= $n-1;$i++)
 	{
-
 		if ($bits[$i] == 1)
 		{
 			echo "-";
@@ -138,8 +129,6 @@ function pseudo($bits,$n)
 		}
 	}
 }
-
-
 function manchester($bits,$n)
 {
 	
@@ -153,7 +142,6 @@ function manchester($bits,$n)
 	}
 	for ($i = 1;$i <= $n-1;$i++)
 	{
-
 		if ($bits[$i] == 1 && $bits[$i - 1] == 1)
 		{
 			echo "|_|¯";
@@ -170,10 +158,8 @@ function manchester($bits,$n)
 		{
 			echo "|¯|_";
 		}
-
 	}
 }
-
 function diffman($bits,$n)
 {
 	$flag = 0;
@@ -190,7 +176,6 @@ function diffman($bits,$n)
 	}
 	for ($i = 1;$i <= $n-1;$i++)
 	{
-
 		if ($bits[$i] == 0)
 		{
 			if ($flag == 0)
@@ -204,16 +189,13 @@ function diffman($bits,$n)
 				$flag = 1;
 			else
 				$flag = 0;
-
 			if ($flag == 0)
 				echo "_|¯";
 			else
 				echo "¯|_";
 		}
-
 	}
 }
-
 function B8ZS($bits,$n)
 {
 	$flag = 0;
@@ -230,7 +212,6 @@ function B8ZS($bits,$n)
 	}
 	for ($i = 1;$i <= $n-1;$i++)
 	{
-
 		if ($i < $n-1 && $bits[$i] == 0 && $bits[$i + 1] == 0 && $bits[$i + 2] == 0 && $bits[$i + 3] == 0 && $bits[$i + 4] == 0 && $bits[$i + 5] == 0 && $bits[$i + 6] == 0 && $bits[$i + 7] == 0)
 		{	
 			echo "---";
@@ -240,7 +221,6 @@ function B8ZS($bits,$n)
 			}
 			else
 				echo "_¯-¯_";
-
 			$i = $i + 8;
 		}
 		if ($bits[$i] == 0)
@@ -259,8 +239,6 @@ function B8ZS($bits,$n)
 		}
 	}
 }
-
-
 function HDB3($bits, $n)
 {
 	$flag = 0;
@@ -313,6 +291,4 @@ function HDB3($bits, $n)
 		}
 	}
 }
-
-
 ?>
