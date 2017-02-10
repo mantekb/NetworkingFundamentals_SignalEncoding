@@ -35,4 +35,9 @@ Since the assignment is done in two ways, the process of running and getting the
 4. On the next prompt, enter 'Y' if the input bits are correct. Else, hit any other key to return to step 3.
 5. You'll see 6 different encoding schemes. If you want to run scramber, hit 'Y'. Else, hit any other key which will terminate the program. If you hit 'Y', you'll see two different scrambling techniques.
 
-
+### Attempt for Bonus Points
+* A GUI-based Web Application
+* Graphical output of the waveforms
+* Assignment hosted on web server; live version of the assignment accessible online.
+* Submission on two different languages - PHP and C++
+* Check done for input bits - only 0's and 1's allowed in the Web Application.
