@@ -1,5 +1,9 @@
 # Assignment - Chapter #5: Signal Encoding
 
+## Introduction
+
+This is a submission of an assignment for Data Communication and Networking - CS 5290. The instructions are available on Instructions section. This assignment is done on two different languages - C++ and PHP. 
+
 ## Team Members
 
 * Arjun Malik ( arjunm@bgsu.edu ) 
@@ -8,10 +12,6 @@
 
 ## Instructor
 * Dr. Robert Green
-
-## Introduction
-
-This is a submission of an assignment for Data Communication and Networking - CS 5290. The instructions are available on next section. This assignment is done on two different languages - C++ and PHP. The PHP code is also hosted on http://signal.sagarsharma.com.np.
 
 ## Instructions
 
@@ -32,6 +32,6 @@ Since the assignment is done in two ways, the process of running and getting the
 3. Enter the number of input bits that you're going to enter. Then enter the input bits one at a time.
 4. On the next prompt, enter 'Y' if the input bits are correct. Else, hit any other key to return to step 3.
 5. You'll see 6 different encoding schemes. If you want to run scramber, hit 'Y'. Else, hit any other key which will terminate the program. If you hit 'Y', you'll see two different scrambling techniques.
-6. 
+
 
 #### The working demo of this assignment on PHP can be accessed from http://signal.sagarsharma.com.np
