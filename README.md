@@ -20,13 +20,15 @@ For this assignment, you will write a program to implement an encoder that recei
 ## Running the program
 Since the assignment is done in two ways, the process of running and getting the output is shown for both ones:
 
-### PHP
-1. Clone this repo inside the 'htdocs' folder if you're running on XAMPP or inside the 'WWW' folder if you're running on WAMPP.
-2. Start the server and the demo would be available on http://localhost/CS4290_SP2017_A3_SHARMA.
+#### PHP
+1. Clone this repo inside the 'htdocs' folder if you're running on XAMPP or inside the 'WWW' folder if you're running on WAMPP. If you're using any other software, refer to that software's specifics to run a PHP project.
+2. Start the server and the demo would be available on http://localhost/CS4290_SP2017_A3_SHARMA. 
 3. Enter the input bits (a combination of 0's and 1's) and hit Get Graph.
 4. That's it. You can see 6 different encoding schemes and 2 different scrambling techniques.
 
-### C++
+<b>The working demo of this assignment on PHP can be accessed from http://signal.sagarsharma.com.np</b>
+
+#### C++
 1. Clone this repo to any working location you like.
 2. Run the file source.cpp with any IDE of your preference that works for C++ codes.
 3. Enter the number of input bits that you're going to enter. Then enter the input bits one at a time.
@@ -34,4 +36,3 @@ Since the assignment is done in two ways, the process of running and getting the
 5. You'll see 6 different encoding schemes. If you want to run scramber, hit 'Y'. Else, hit any other key which will terminate the program. If you hit 'Y', you'll see two different scrambling techniques.
 
 
-#### The working demo of this assignment on PHP can be accessed from http://signal.sagarsharma.com.np
