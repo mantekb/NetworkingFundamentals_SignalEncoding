@@ -18,7 +18,7 @@
 
 
 		<form action="index.php" method="GET" class = "form-inline" autocomplete="off">
-			<input name="bits" class="form-control" onkeypress='return event.charCode >= 48 && event.charCode <= 49' placeholder="Enter input bits..." type="number" value = "<?php echo $_GET['bits'] ?>" style = "width: 300px">
+			<input name="bits" class="form-control" onkeypress='return event.charCode >= 48 && event.charCode <= 49' placeholder="Enter input bits..." type="text" value = "<?php echo $_GET['bits'] ?>" style = "width: 300px">
 			<button type="submit" class="btn" type="button">Get Graph</button>
 		</form>
 
