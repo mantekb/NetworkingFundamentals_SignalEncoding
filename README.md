@@ -41,3 +41,8 @@ Since the assignment is done in two ways, the process of running and getting the
 * Assignment hosted on web server; live version of the assignment accessible online.
 * Submission on two different languages - PHP and C++
 * Check done for input bits - only 0's and 1's allowed in the Web Application.
+
+
+### Output
+Following shows one test case for input bits - 010011000110000000010010
+![](Input_Output.png)
