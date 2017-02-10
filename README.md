@@ -26,7 +26,7 @@ Since the assignment is done in two ways, the process of running and getting the
 3. Enter the input bits (a combination of 0's and 1's) and hit Get Graph.
 4. That's it. You can see 6 different encoding schemes and 2 different scrambling techniques.
 
-### Representations
+#### Representations
 1. Positive Voltage is represented by a Macron( ¯ )
 2. Zero Voltage is represented by a Hyphen/Minus sign( - )
 3. Negitive Volatge is represented by an Underscore( _ )
@@ -41,7 +41,7 @@ Since the assignment is done in two ways, the process of running and getting the
 4. On the next prompt, enter 'Y' if the input bits are correct. Else, hit any other key to return to step 3.
 5. You'll see 6 different encoding schemes. If you want to run scramber, hit 'Y'. Else, hit any other key which will terminate the program. If you hit 'Y', you'll see two different scrambling techniques.
 
-### Representations
+#### Representations
 1. Positive Voltage is shown by a Circumflex Accent/power operator( ^ )
 2. Zero Voltage is represented by a Hyphen/Minus sign( - )
 3. Negitive Volatge is represented by an Underscore( _ )
